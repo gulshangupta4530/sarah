@@ -1,0 +1,445 @@
+<html>
+<head>
+<title>Basic</title>
+  
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+    margin: 0;
+    padding: 0;
+  }
+
+  .navbar {
+    background: #333;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+  }
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+      line-height: 1.9;
+  
+  }
+
+  h1 {
+    text-align: center;
+    background: #4CAF50;
+    color: white;
+    padding: 15px;
+    margin: 0;
+  }
+
+  .program {
+    background: white;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 8px;
+    max-width: 800px;
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.2);
+  }
+
+  .program h2 {
+    color: #4CAF50;
+    margin-top: 0;
+  }
+
+  .question {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  pre {
+    background: #272822;
+    color: #f8f8f2;
+    padding: 10px;
+    border-radius: 5px;
+  }
+    .btn-container {
+    margin-top: 60px;
+  }
+
+  .btn {
+    display: inline-block;
+    background: white;
+    color: #4CAF50;
+    border: none;
+    padding: 15px 35px;
+    margin: 15px;
+    font-size: 20px;
+    border-radius: 8px;
+    
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+  }
+
+  .btn:hover {
+    background: #333;
+    color: white;
+    transition: 0.3s;
+  }
+</style>
+</head>
+
+<body>
+
+  <h1>C PROGRAMS</h1>
+
+  <div id="basic" class="program">
+    <h2>Basic Input-Output Questions</h2>
+
+    <p class="question">1. Write a program to print the message: Today I made my first C Program.</p>
+    <h3>Code:</h3>
+    <pre>
+#include &lt;stdio.h&gt;
+void main() {
+  printf("Today I made my first C program.");
+  getch();
+}
+    </pre>
+    <h3>Output:</h3>
+    <pre>
+Today I made my first C program.
+    </pre>
+  </div>
+
+  <div class="program">
+    <p class="question">2. Write a program to read a character from the keyboard and display it on the screen.</p>
+    <h3>Code:</h3>
+    <pre>
+#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+void main() {
+  char ch;
+  clrscr();
+  printf("Type a character: ");
+  scanf("%c", &ch);
+  printf("The character is: %c", ch);
+  getch();
+}
+    </pre>
+    <h3>Output:</h3>
+    <pre>
+Type a character: k
+The character is: k
+    </pre>
+  </div>
+
+  <div class="program">
+    <p class="question">3. Write a program to print your name at the center of the first line.</p>
+    <h3>Code:</h3>
+    <pre>
+#include &lt;stdio.h&gt;
+void main() {
+  printf("\t\t\tSarah\n");
+  getch();
+}
+    </pre>
+    <h3>Output:</h3>
+    <pre>
+                        Sarah
+    </pre>
+  </div>
+
+  <div class="program">
+    <p class="question">4. Write a program to store a single quote and print that variable to show single quote on output screen.</p>
+    <h3>Code:</h3>
+    <pre>
+#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+void main() {
+  char ch = '\'';
+  clrscr();
+  printf("Single quote is: %c", ch);
+  getch();
+}
+    </pre>
+    <h3>Output:</h3>
+    <pre>
+Single quote is: '
+    </pre>
+  </div>
+
+  <div class="program">
+    <p class="question">5.Write a program to read only 4 characters from the keyboard and display it on the screen in a separate line.</p>
+    <h3>Code:</h3>
+    <pre>
+#include &lt;stdio.h&gt;
+void main() {
+    char c,a,b,d;
+    printf("enter 4 characters : ");
+    scanf("%c %c %c %c",&c,&a,&b,&d);
+    printf("the characters are:\n%c\n%c\n%c\n%c\n",c,a,b,d);
+}
+    </pre>
+    <h3>Output:</h3>
+    <pre>
+enter 4 characters : abcd
+the characters are:
+a
+b
+c
+d
+    </pre>
+  </div>
+
+  <div class="program">
+    <p class="question">6. Write a program for printing your name on output screen but your name should blink 5 times</p>
+    <h3>Code:</h3>
+    <pre>
+#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+#include &lt;dos.h&gt;
+void main(){
+    int i;
+    for(i=1;i<=5;i++){
+     
+        printf("abc");
+        delay(500);
+       clrscr();
+
+       delay(500);
+    }
+}
+    </pre>
+    <h3>Output:</h3>
+    <pre>
+  abc
+    </pre>
+  </div>
+
+  <div class="program">
+    <p class="question">7.Write the program to display this output ?</p>
+    <h3>Code:</h3>
+    <pre>
+#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+#include &lt;dos.h&gt;
+void main () {
+     clrscr();
+      printf("hello,welcome to c");
+       delay(5000); 
+    }
+    </pre>
+    <h3>Output:</h3>
+    <pre>
+  hello,welcome to c
+    </pre>
+  </div>
+
+  <div class="program">
+    <p class="question">8.Enter password display like ****** ?</p>
+    <h3>Code:</h3>
+    <pre>
+#include &lt;stdio.h&gt;
+void main(){
+    char a,b,c,d,e,f;
+    printf("enter password(6 word): ");
+    scanf("%c %c %c %c %c %c",&a,&b,&c,&d,&e,&f);
+    printf("pass is ******");
+}
+    </pre>
+    <h3>Output:</h3>
+    <pre>
+  enter password(6 word): 123456
+pass is ******
+    </pre>
+  </div>
+
+  <div class="program">
+    <p class="question">9.Enter two character from user and print ASCII value ?</p>
+    <h3>Code:</h3>
+    <pre>
+#include &lt;stdio.h&gt;
+void main(){
+    char a;
+    char b;
+    printf("enter two character: ");
+    scanf("%c %c",&a,&b);
+    printf("ascii value is %d and %d",a,b);
+}
+    </pre>
+    <h3>Output:</h3>
+    <pre>
+  enter two character: a b
+ascii value is 97 and 98
+    </pre>
+  </div>
+
+<div class="program">
+    <p class="question">10. Print all ASCII character 0 to 127 ?</p>
+    <h3>Code:</h3>
+    <pre>
+#include &lt;stdio.h&gt;
+void main(){
+int i;
+for(i=0;i<=127;i++){
+    printf("%c\n",i);
+}
+}
+    </pre>
+    <h3>Output:</h3>
+    <pre>
+  ☺
+☻
+♥
+♦
+♣
+♠
+
+
+
+
+
+
+
+
+
+
+
+
+►
+◄
+↕
+‼
+¶
+§
+▬
+↨
+↑
+↓
+→
+
+∟
+↔
+▲
+▼
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+:
+;
+<
+=
+>
+?
+@
+A
+B
+C
+D
+E
+F
+G
+H
+I
+J
+K
+L
+M
+N
+O
+P
+Q
+R
+S
+T
+U
+V
+W
+X
+Y
+Z
+[
+\
+]
+^
+_
+`
+a
+b
+c
+d
+e
+f
+g
+h
+i
+j
+k
+l
+m
+n
+o
+p
+q
+r
+s
+t
+u
+v
+w
+x
+y
+z
+{
+|
+}
+~
+    </pre>
+  </div>
+
+  <div class="btn-container">
+    <a href="../website/c_program.html" class="btn">Home</a>
+</div>
+
+</body>
+</html>
